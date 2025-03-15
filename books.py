@@ -27,7 +27,7 @@ try:
     email_input = WebDriverWait(driver, 15).until(
         EC.presence_of_element_located((By.ID, "ap_email"))
     )
-    email_input.send_keys("nidarumsha@gmail.com")  # Replace with your Amazon email
+    email_input.send_keys("yourmail@gmail.com")  # Replace with your Amazon email
     driver.find_element(By.ID, "continue").click()
     print("Entered email and clicked 'Continue'.")
 
@@ -35,7 +35,7 @@ try:
     password_input = WebDriverWait(driver, 15).until(
         EC.presence_of_element_located((By.ID, "ap_password"))
     )
-    password_input.send_keys("crazy123")  # Replace with your Amazon password
+    password_input.send_keys("your_password")  # Replace with your Amazon password
     driver.find_element(By.ID, "signInSubmit").click()
     print("Entered password and logged in.")
 
